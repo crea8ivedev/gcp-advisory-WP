@@ -1,0 +1,279 @@
+/* join GCP advisory form start */
+.zigzag-form form {
+  @apply max-w-[824px] w-full mx-auto px-20
+}
+
+.zigzag-form .ctm-row span {
+  @apply px-10 767:px-0;
+}
+
+.zigzag-form .ctm-row  {
+  @apply mb-20
+}
+
+.zigzag-form input , .zigzag-form .wpcf7-select {
+  @apply !bg-white w-full ;
+}
+
+.ctm-row p {
+  @apply  -mx-10 flex items-center justify-center 767:flex-col 767:mx-0;
+}
+
+.ctm-full-row.ctm-row span,
+.ctm-full-row.ctm-row {
+  @apply w-full;
+}
+
+.ctm-row span {
+  @apply lg:w-6/12 w-full;
+}
+
+.ctm-upload-file {
+  @apply bg-white;
+}
+
+.ctm-upload-file .wpcf7-form-control {
+  @apply rounded-[20px]
+}
+
+.ctm-upload-file #fileuploadfield {
+  @apply hidden;
+}
+
+.zigzag-form form .ctm-row select {
+  background-position: 97%;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-image: url('../images/bottom-arrow.svg');
+}
+
+.ctm-upload-file .uploadfieldtrick .int p {
+  @apply flex flex-col gap-0 h-full justify-end;
+}
+.ctm-upload-file .uploadfieldtrick .int input {
+  @apply border-0 text-center !bg-transparent w-full cursor-pointer  ;
+}
+
+.ctm-upload-file .uploadtextfield {
+  @apply !text-green-200 underline text-16 leading-24;
+}
+
+.ctm-upload-file .uploadfieldtrick .int input#uploadbrowsebutton {
+  @apply text-transparent;
+}
+.ctm-upload-file .uploadfieldtrick .int {
+  @apply border-2 border-solid border-font bg-white rounded-[20px] h-[113px] relative z-1;
+}
+.ctm-upload-file .uploadfieldtrick .int {
+  background-image: url('../images/upload-img.svg');
+  @apply bg-no-repeat bg-[length:30px] lg:bg-[length:40px] bg-[50%_20px];
+}
+
+.ctm-upload-file .uploadfieldtrick .btn {
+  @apply w-full h-full;
+}
+
+.zigzag-form .wpcf7-spinner {
+  @apply absolute bottom-0
+}
+
+/* .zigzag-form .btn-submit p {
+  @apply w-fit mt-20 mx-auto !bg-green-300 !text-white font-700 hover:!bg-white hover:!text-green-300 transition-all hover:transition-all relative rounded-30;
+}
+
+.zigzag-form .btn-submit p::before {
+  content: '';
+  @apply absolute top-0 left-0 w-full h-full -z-1 bg-green-300 transition-all duration-300 delay-100 rounded-30;
+}
+
+.zigzag-form .btn-submit p::after {
+  content: '';
+    @apply border-2 border-solid border-green-300 w-full h-full left-0 top-0 absolute rounded-30;
+} */
+
+.zigzag-form .btn-submit {
+  @apply relative mt-[20px];
+}
+
+.zigzag-form .btn-submit input {
+  @apply relative z-1 w-auto border-none !bg-transparent transition-all hover:transition-all rounded-30;
+}
+
+.ctm-recaptch {
+  @apply flex flex-wrap flex-row-reverse items-center justify-center mt-20 gap-y-2 gap-x-5
+}
+
+.ctm-recaptch span {
+  @apply !bg-transparent !border-none p-0 w-auto h-auto block;
+}
+
+.ctm-recaptch .wpcf7-form-control.recaptcha {
+  @apply !bg-transparent border-2 border-solid border-green-200;
+}
+
+.ctm-recaptch span.wpcf7-form-control {
+  @apply  !p-0 rounded-none !border-solid;
+}
+
+.zigzag-form .ctm-recaptch p {
+  @apply !m-0;
+}
+.zigzag-form .wpcf7-textarea {
+  @apply h-[150px] !bg-white w-full
+}
+.zigzag-form .wpcf7-form .wpcf7-submit {
+ @apply !bg-transparent !p-0 !border-0
+}
+.zigzag-form .wpcf7-form .btn input.wpcf7-submit {
+  @apply font-700;
+ }
+/* join GCP advisory form end */
+
+/* search box start */
+/* .search-box form {
+  @apply max-w-[400px] w-full ml-auto
+} */
+
+.search-box input {
+  @apply bg-white bg-opacity-40 rounded-[30px] border-2 border-green-200 border-solid px-20 py-[7px] w-full pl-50 text-16 font-400 text-font placeholder:text-font;
+}
+
+.search-box-inner {
+  @apply relative;
+}
+
+.search-box-inner::before {
+  background-image: url('../images/search.svg');
+  @apply content-[''] absolute left-[20px] bg-cover w-5 h-5 top-[50%] -translate-y-[50%];
+}
+/* search box end */
+
+/* 404-start */
+.header-two  {
+  @apply !relative;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+.header-two .navbar .menu-main-menu .upper-menu li a {
+  @apply text-green-300
+}
+ .header-two .navbar .menu-main-menu>ul>li>a {
+  @apply text-font
+ }
+
+ .error404-content .sub .h2 {
+  @apply font-400 font-nunito
+ }
+
+ .header-two button svg path{
+  @apply fill-green-300;
+}
+.header-two .user-icon svg path {
+  @apply fill-green-200;
+}
+.header-two .navbar {
+  @apply 1023:h-[calc(100dvh_-_6.5dvh)]
+}
+
+/* sample-page-start */
+
+.container-fluid-md {
+  @apply  px-20 md:px-55 lg:px-[80px] w-full mx-auto
+}
+.ctm-general-sec{
+  @apply lg:py-55 py-40
+}
+
+.ctm-general-sec h1,
+.ctm-general-sec h2, 
+.ctm-general-sec h3, 
+.ctm-general-sec h4, 
+.ctm-general-sec h5, 
+.ctm-general-sec h6 {
+  @apply text-green-200
+} 
+.ctm-general-sec h1 , .ctm-general-sec .h1 {
+  @apply uppercase
+}
+.ctm-general-sec .content p {
+  @apply text-16 leading-[29px] 
+}
+.ctm-general-sec ul {
+  @apply pt-[10px] lg:pb-[40px] pb-[20px]
+}
+.ctm-general-sec .content p:last-child {
+  @apply !mb-0
+}
+
+.ctm-general-sec h2 {
+  @apply lg:pb-[40px] lg:pt-[20px] pb-[20px] pt-[20px]
+}
+.ctm-general-sec h3{
+  @apply pb-[10px]
+}
+.ctm-general-sec ol{
+  @apply pt-[10px]
+}
+
+.ctm-general-sec ol li{
+ @apply list-decimal text-[16px] leading-[30px] font-cairo text-font;
+ list-style-position: inside;
+}
+
+
+.ctm-general-sec ol li::marker{
+  @apply text-green-200 text-[16px] font-cairo font-700 mr-[10px]
+}
+
+.ctm-general-sec p strong {
+  @apply !text-green-200 !font-700 
+}
+.ctm-general-sec .content  {
+  @apply last:!m-0
+}
+.ctm-general-sec blockquote p , .ctm-general-sec blockquote h6{
+  @apply border-0 border-l-[1px] border-solid border-green-200 pl-[10px]
+}
+.ctm-general-sec blockquote{
+  @apply lg:pb-[40px] lg:pt-[20px] pb-[20px] pt-[0px] !mb-0
+}
+.ctm-general-sec blockquote h6 {
+  @apply !mb-0
+}
+
+.ctm-general-sec h4 {
+  @apply font-nunito mt-[40px] pb-[10px]
+}
+.ctm-general-sec .heading-level h3 {
+  @apply font-700 pb-0
+}
+
+.ctm-general-sec .heading-level h4 {
+  @apply font-cairo font-700 pb-0 lg:mb-40 mb-20
+}
+
+.ctm-general-sec .heading-level h5,
+.ctm-general-sec .heading-level h6 {
+  @apply font-700 lg:mb-40 mb-20
+}
+
+.ctm-general-sec p i {
+  @apply inline
+}
+.ctm-general-sec p a{
+  @apply text-green-200
+}
+.ctm-general-sec h6 {
+  @apply italic mb-40 1023:mb-20
+}
+
+.contact-zigzag .zigzag-img  {
+  @apply pt-[75%] overflow-hidden relative bg-[#000]
+}
+.contact-zigzag .zigzag-img  iframe{
+  @apply  absolute top-0 left-0 object-cover h-full w-full object-cover;
+  border: 0;
+    transform: scale(1.5);
+    overflow: hidden;
+    mix-blend-mode: luminosity;
+    
+}
