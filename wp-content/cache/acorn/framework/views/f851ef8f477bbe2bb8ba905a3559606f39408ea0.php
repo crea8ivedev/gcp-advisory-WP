@@ -9,9 +9,9 @@
                         <h2><?php echo $content->title; ?></h2>
                     </div>
                 <?php endif; ?>
-                <?php if(!empty($content->title)): ?>
+                <?php if(!empty($content->sub_title)): ?>
                     <div class="content pt-20 fadeText">
-                        <p>It brings our leadership team great joy to deliver on these aspirations</p>
+                        <p><?php echo $content->sub_title; ?></p>
                     </div>
                 <?php endif; ?>
             </div>

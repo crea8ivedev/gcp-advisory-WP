@@ -9,9 +9,9 @@
                         <h2>{!! $content->title !!}</h2>
                     </div>
                 @endif
-                @if (!empty($content->title))
+                @if (!empty($content->sub_title))
                     <div class="content pt-20 fadeText">
-                        <p>It brings our leadership team great joy to deliver on these aspirations</p>
+                        <p>{!! $content->sub_title !!}</p>
                     </div>
                 @endif
             </div>

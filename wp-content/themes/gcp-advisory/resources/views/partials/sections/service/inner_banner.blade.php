@@ -24,7 +24,6 @@
             </div>
         @endif
         <div class="cmn-pattern w-full absolute bottom-[-1px] xl4:bottom-[-4px] right-0 left-0 z-1">
-            {{-- <img src="../assets/images/banner-pattern.png" alt="pattern" class="w-full block object-contain h-full"> --}}
             <svg width="1512" height="70" viewBox="0 0 1512 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M756 0L1512 70H0L756 0Z" fill="white" />
             </svg>
