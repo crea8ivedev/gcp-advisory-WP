@@ -1,7 +1,7 @@
 <?php if(isset($content->hide_section) && $content->hide_section == 'no'): ?>
 
     <section
-        class="service-info-wrapper py-55 relative bubble_pattern <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
+        class="service-info-wrapper py-40 xl2:py-55 relative bubble_pattern <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
         <?php if($content->id): ?> id="<?php echo $content->id; ?>" <?php endif; ?>>
         <div class="container-fluid-lg">
             <div class="title-content text-center fadeText">

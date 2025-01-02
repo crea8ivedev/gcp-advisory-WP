@@ -9,7 +9,7 @@
         @endphp
     @endif
     <section
-        class="our-industries-wrapper pt-20 pb-40 xl2:pb-70 {!! $bg_color !!} relative @if ($content->extra_class) {!! $content->extra_class !!} @endif"
+        class="our-industries-wrapper pt-20 {!! $bg_color !!} relative @if ($content->extra_class) {!! $content->extra_class !!} @endif"
         @if ($content->id) id="{!! $content->id !!}" @endif>
         <div class="industries-content relative z-1">
             @if ($content->style == 'style_2')
@@ -36,7 +36,7 @@
             @endif
             @if (!empty($content->industries_arr))
                 <div
-                    class="industries-grid !mt-40 swiper industries-slider flex pt-40 !pb-70 !px-20 md:!px-55 lg:!px-[100px]">
+                    class="industries-grid !mt-40 swiper industries-slider flex pt-40 !pb-40 xl2:!pb-70 !px-20 md:!px-55 lg:!px-[100px]">
                     <div class="swiper-wrapper">
                         @foreach ($content->industries_arr as $industries_arr)
                             <div class="swiper-slide">

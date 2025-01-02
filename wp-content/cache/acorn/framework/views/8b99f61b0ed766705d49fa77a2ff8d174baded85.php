@@ -1,6 +1,6 @@
 <?php if(isset($content->hide_section) && $content->hide_section == 'no'): ?>
     <section
-        class="banner-wrapper relative h-screen w-full bg-white <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
+        class="banner-wrapper relative h-[798px] lg:h-[880px] xxxl:h-[954px] w-full bg-white <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
         <?php if($content->id): ?> id="<?php echo $content->id; ?>" <?php endif; ?>>
         <?php if($content->image_or_video == 'image'): ?>
             <div class="swiper banner-slider h-full">
@@ -16,7 +16,7 @@
                             <div class="banner-cta relative z-1">
                                 <div class="container-fluid-lg">
                                     <div class="content text-center h-full">
-                                        <div class="slider-content h-full flex justify-center items-center flex-col">
+                                        <div class="slider-content h-full flex justify-center items-center flex-col 1023:pt-100 1023:pb-50">
                                             <?php if(!empty($banner_slider['heading'])): ?>
                                                 <div class="title title-white title-uppercase fadeText">
                                                     <h1><?php echo $banner_slider['heading']; ?></h1>

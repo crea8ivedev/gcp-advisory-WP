@@ -86,30 +86,11 @@ domReady(async () => {
     }
 
 
-    if ($('.service-wrapper').length) {
-      const $slides = $('.service-mobile-slider .swiper-slide');
-      
-      if ($slides.length <= 3) {
-        // Clone slides to ensure looping functionality works correctly
-        $slides.each(function () {
-          $(this).parent().append($(this).clone());
-        });
-      }
-    
-      if ($('.service-wrapper').length) {
-        const $slides = $('.service-mobile-slider .swiper-slide');
-        
-        if ($slides.length <= 3) {
-          // Clone slides to ensure looping functionality works correctly
-          $slides.each(function () {
-            $(this).parent().append($(this).clone());
-          });
-        }
-      
-        var bannerslider = new Swiper(".service-mobile-slider", {
-          slidesPerView: 1.5,
+    if ($('.service-wrapper').length) { 
+      var bannerslider = new Swiper(".service-mobile-slider", {
+          slidesPerView: 1,
           spaceBetween: 28,
-          centeredSlides: true,
+          centeredSlides: false,
           loop: true,
           pagination: {
             el: ".swiper-pagination",
@@ -145,7 +126,6 @@ domReady(async () => {
             },
           },
         });
-      }
       
     }
     
@@ -186,49 +166,6 @@ domReady(async () => {
       }
     }
     // Initialize sliders
-
-    // indutsries slider
-    // initSwiper({
-    //   wrapper: ".service-wrapper",
-    //   sliderClass: ".service-mobile-slider",
-    //   slidesPerView: 1,
-    //   spaceBetween: 0,
-    //   centeredSlides: true,
-    //   loop: true,
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //   },
-    //   autoplay: {
-    //     delay: 2000,
-    //   },
-    //   breakpoints: {
-    //     575: {
-    //       centeredSlides: true,
-    //       loop: true,
-    //       slidesPerView: 1.3,
-    //       spaceBetween: 0,
-    //     },
-    //     768: {
-    //       centeredSlides: true,
-    //       loop: true,
-    //       slidesPerView: 1.5,
-    //       spaceBetween: 0,
-    //     },
-    //     1024: {
-    //       centeredSlides: true,
-    //       loop: true,
-    //       slidesPerView: 2.5,
-    //       spaceBetween: 0,
-    //     },
-    //     1366: {
-    //       centeredSlides: false,
-    //       slidesPerView: 3,
-    //       spaceBetween: 28,
-    //     },
-    //   },
-    // });
-
 
     // indutsries slider
     initSwiper({

@@ -23,7 +23,7 @@
     <?php endif; ?>
     <?php if($content->style == 'style_1'): ?>
         <section
-            class="zigzag-wrapper py-70 relative <?php echo $image_position; ?> <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?> "
+            class="zigzag-wrapper py-40 xl2:py-70 relative <?php echo $image_position; ?> <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?> "
             <?php if($content->id): ?> id="<?php echo $content->id; ?>" <?php endif; ?>>
             <div class="container-fluid-lg">
                 <div class="<?php echo $main_div; ?>">
@@ -57,9 +57,9 @@
             </div>
         </section>
     <?php else: ?>
-        <section class="zigzag-wrapper py-70 relative <?php echo $image_position; ?>">
+        <section class="zigzag-wrapper py-40 xl2:py-70 relative <?php echo $image_position; ?>">
             <div class="container-fluid-lg">
-                <div class="<?php echo $main_div; ?>">
+                <div class="<?php if($content->style == "style_2"): ?> items-center <?php endif; ?> <?php echo $main_div; ?>">
                     <?php if(!empty($content->image)): ?>
                         <div class="w-full lg:w-[55%]">
                             <div class="zigzag-img relative pt-[54%] h-full fadeText">

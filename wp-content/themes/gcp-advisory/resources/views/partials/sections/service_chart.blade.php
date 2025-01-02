@@ -38,7 +38,7 @@
                     </div>
                 @endif
                 @if (!empty($content->services))
-                    <div class="swiper service-mobile-slider !pb-70">
+                    <div class="swiper service-mobile-slider items-center !pb-70">
                         <div class="swiper-wrapper">
                             @foreach ($content->services as $services)
                                 <div class="swiper-slide">

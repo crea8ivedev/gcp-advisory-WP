@@ -4,12 +4,12 @@
         @if ($content->id) id="{!! $content->id !!}" @endif>
         <div class="container-fluid-lg">
             @if (!empty($content->heading))
-                <div class="title title-white">
+                <div class="title title-white fadeText">
                     <h2>{!! $content->heading !!}</h2>
                 </div>
             @endif
             @if (!empty($content->description))
-                <div class="content title-white pt-20 lg:max-w-[1400px] mx-auto">
+                <div class="content title-white pt-20 lg:max-w-[1400px] mx-auto fadeText">
                     {!! $content->description !!}
                 </div>
             @endif

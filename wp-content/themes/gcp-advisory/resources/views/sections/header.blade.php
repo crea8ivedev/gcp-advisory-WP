@@ -141,7 +141,16 @@
                         'theme_location' => 'primary_navigation',
                         'container' => false,
                         'menu_class' =>
-                            'menu flex 1023:flex-col flex-wrap lg:items-center lg:justify-center items-start my-0 lg:gap-[40px] xxl:gap-[60px]',
+                            'menu hidden lg:flex 1023:flex-col flex-wrap lg:items-center lg:justify-center items-start my-0 lg:gap-[40px] xxl:gap-[60px]',
+                        'echo' => false,
+                    ]) !!}
+                @endif
+                @if (has_nav_menu('secondary_navigation'))
+                    {!! wp_nav_menu([
+                        'theme_location' => 'secondary_navigation',
+                        'container' => false,
+                        'menu_class' =>
+                            'menu 1023:flex hidden 1023:flex-col flex-wrap lg:items-center lg:justify-center items-start my-0 lg:gap-[40px] xxl:gap-[60px]',
                         'echo' => false,
                     ]) !!}
                 @endif
@@ -152,7 +161,7 @@
                         @if ($index !== 1)
                             <!-- Skip the second element -->
                             <a href="{!! $primary_button['button']['url'] !!}" target="{!! $primary_button['button']['target'] !!}"
-                                class="btn btn-greenborder-100 w-full justify-center"
+                                class="btn btn-greenborder-100 w-full justify-center !capitalize"
                                 aria-label="{!! $primary_button['button']['title'] !!}">
                                 {!! $primary_button['button']['title'] !!} </a>
                         @endif
@@ -162,57 +171,3 @@
         </div>
     </div>
 </header>
-<!-- <div class="navbar hidden items-center justify-between lg:order-1 order-2 lg:w-full">
-    <div class="logo hidden lg:flex">
-        <a href="{{ esc_url(home_url()) }}" aria-label="homepage">
-            @if (is_404() || is_page(2))
-                @if (!empty($header_black_logo))
-                    <img src="{!! $header_black_logo['url'] !!}" width="562.72" height="64" class="ozad"
-                        alt="{!! $header_black_logo['alt'] !!}">
-                @endif
-            @else
-                @if (!empty($header_white_logo))
-                    <img src="{!! $header_white_logo['url'] !!}" width="562.72" height="64" class="l-no lozad"
-                        alt="{!! $header_white_logo['alt'] !!}">
-                @endif
-                @if (!empty($header_black_logo))
-                    <img src="{!! $header_black_logo['url'] !!}" width="562.72" height="64" class="l-st lozad"
-                        alt="{!! $header_black_logo['alt'] !!}">
-                @endif
-            @endif
-        </a>
-    </div>
-    <div id="mobile-menu-main" class="menu-main-menu">
-        @if (!empty($primary_buttons))
-            <ul role="list"
-                class="upper-menu menu hidden lg:flex 1023:flex-col flex-wrap lg:items-center lg:justify-end items-start my-0 lg:gap-[40px] xxl:gap-[60px]">
-                @foreach ($primary_buttons as $primary_button)
-                    <li>
-                        <a href="{!! $primary_button['button']['url'] !!}" taget="{!! $primary_button['button']['target'] !!}"
-                            aria-label="{!! $primary_button['button']['title'] !!}"> {!! $primary_button['button']['title'] !!} </a>
-                    </li>
-                @endforeach
-            </ul>
-        @endif
-        @if (has_nav_menu('secondary_navigation'))
-            {!! wp_nav_menu([
-                'theme_location' => 'secondary_navigation',
-                'container' => false,
-                'menu_class' =>
-                    'menu flex 1023:flex-col flex-wrap lg:items-center lg:justify-center items-start my-0 lg:gap-[40px] xxl:gap-[60px]',
-                'echo' => false,
-            ]) !!}
-        @endif
-    </div>
-    @if (!empty($primary_buttons))
-        <div class="btn-custom lg:hidden pt-20 flex flex-col items-center gap-[12px] !px-[24px]">
-            @foreach ($primary_buttons as $index => $primary_button)
-                @if ($index !== 1)
-                    <a href="{!! $primary_button['button']['url'] !!}" target="{!! $primary_button['button']['target'] !!}"
-                        class="btn btn-greenborder-100 w-full justify-center" aria-label="{!! $primary_button['button']['title'] !!}">
-                        {!! $primary_button['button']['title'] !!} </a>
-                @endif
-            @endforeach
-        </div>
-    @endif
-</div> -->

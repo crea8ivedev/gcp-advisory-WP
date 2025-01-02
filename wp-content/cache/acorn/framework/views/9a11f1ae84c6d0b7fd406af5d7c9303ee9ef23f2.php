@@ -39,7 +39,7 @@
                     </div>
                 <?php endif; ?>
                 <?php if(!empty($content->services)): ?>
-                    <div class="swiper service-mobile-slider !pb-70">
+                    <div class="swiper service-mobile-slider items-center !pb-70">
                         <div class="swiper-wrapper">
                             <?php $__currentLoopData = $content->services; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $services): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <div class="swiper-slide">

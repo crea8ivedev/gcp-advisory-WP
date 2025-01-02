@@ -1,6 +1,6 @@
 <?php if(isset($content->hide_section) && $content->hide_section == 'no'): ?>
     <section
-        class="benefits-grid-wrapper py-70 relative <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?> "
+        class="benefits-grid-wrapper py-40 xl2:py-70 relative <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?> "
         <?php if($content->id): ?> id="<?php echo $content->id; ?>" <?php endif; ?>>
         <div class="container-fluid-lg">
             <div class="title-content text-center">
@@ -21,7 +21,7 @@
                     <?php $__currentLoopData = $content->icon_grid; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $icon_grid): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <div class="grid-box text-center">
                             <?php if(!empty($icon_grid['icon'])): ?>
-                                <div class="benefits-icon w-[80px] h-[80px]">
+                                <div class="benefits-icon w-[50px] h-[50px] xxl:w-[80px] xxl:h-[80px]">
                                     <img class="img-fluid lozad" src="<?php echo $icon_grid['icon']['url']; ?>"
                                         alt="<?php echo $icon_grid['icon']['alt']; ?>" width="80" height="80">
                                 </div>

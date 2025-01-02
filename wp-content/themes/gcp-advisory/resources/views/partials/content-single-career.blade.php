@@ -42,7 +42,7 @@
     </div>
 </section>
 
-<section class="zigzag-wrapper py-70 relative">
+<section class="zigzag-wrapper py-40 xl2:py-70 relative">
     <div class="container-fluid-lg">
         <div class="flex items-center gap-[40px] xxxl:gap-[100px] 1023:flex-wrap">
             @if (!empty($featured_image_url))
@@ -79,7 +79,7 @@
 </section>
 
 @if (!empty($information_grid))
-    <section class="roles-responsibility-wrapper py-40 lg:py-70 bg-green-200 relative">
+    <section class="roles-responsibility-wrapper py-40 xl2:py-70 bg-green-200 relative">
         <div class="container-fluid-lg">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] xxxl:gap-[55px] fadeText">
                 @foreach ($information_grid as $information)
@@ -93,7 +93,7 @@
     </section>
 @endif
 
-<section class="zigzag-form zigzag-wrapper zigzag-pattern relative py-[72px] text-center">
+<section class="zigzag-form zigzag-wrapper zigzag-pattern relative py-40 xl2:py-70 text-center">
   <div class="title title-capitalize title-green flex items-center gap-[20px] fadeText justify-center pb-40">
     <h2>
       @if (!empty($form_title))

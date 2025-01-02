@@ -1,7 +1,7 @@
 @if (isset($content->hide_section) && $content->hide_section == 'no')
 
     <section
-        class="service-info-wrapper py-55 relative bubble_pattern @if ($content->extra_class) {!! $content->extra_class !!} @endif"
+        class="service-info-wrapper py-40 xl2:py-55 relative bubble_pattern @if ($content->extra_class) {!! $content->extra_class !!} @endif"
         @if ($content->id) id="{!! $content->id !!}" @endif>
         <div class="container-fluid-lg">
             <div class="title-content text-center fadeText">

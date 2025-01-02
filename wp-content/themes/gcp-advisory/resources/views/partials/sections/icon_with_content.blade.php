@@ -1,6 +1,6 @@
 @if (isset($content->hide_section) && $content->hide_section == 'no')
     <section
-        class="benefits-grid-wrapper py-70 relative @if ($content->extra_class) {!! $content->extra_class !!} @endif "
+        class="benefits-grid-wrapper py-40 xl2:py-70 relative @if ($content->extra_class) {!! $content->extra_class !!} @endif "
         @if ($content->id) id="{!! $content->id !!}" @endif>
         <div class="container-fluid-lg">
             <div class="title-content text-center">
@@ -21,7 +21,7 @@
                     @foreach ($content->icon_grid as $icon_grid)
                         <div class="grid-box text-center">
                             @if (!empty($icon_grid['icon']))
-                                <div class="benefits-icon w-[80px] h-[80px]">
+                                <div class="benefits-icon w-[50px] h-[50px] xxl:w-[80px] xxl:h-[80px]">
                                     <img class="img-fluid lozad" src="{!! $icon_grid['icon']['url'] !!}"
                                         alt="{!! $icon_grid['icon']['alt'] !!}" width="80" height="80">
                                 </div>

@@ -9,7 +9,7 @@
         ?>
     <?php endif; ?>
     <section
-        class="our-industries-wrapper pt-20 pb-40 xl2:pb-70 <?php echo $bg_color; ?> relative <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
+        class="our-industries-wrapper pt-20 <?php echo $bg_color; ?> relative <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
         <?php if($content->id): ?> id="<?php echo $content->id; ?>" <?php endif; ?>>
         <div class="industries-content relative z-1">
             <?php if($content->style == 'style_2'): ?>
@@ -36,7 +36,7 @@
             <?php endif; ?>
             <?php if(!empty($content->industries_arr)): ?>
                 <div
-                    class="industries-grid !mt-40 swiper industries-slider flex pt-40 !pb-70 !px-20 md:!px-55 lg:!px-[100px]">
+                    class="industries-grid !mt-40 swiper industries-slider flex pt-40 !pb-40 xl2:!pb-70 !px-20 md:!px-55 lg:!px-[100px]">
                     <div class="swiper-wrapper">
                         <?php $__currentLoopData = $content->industries_arr; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $industries_arr): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <div class="swiper-slide">

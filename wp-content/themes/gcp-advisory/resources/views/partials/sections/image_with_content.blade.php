@@ -23,7 +23,7 @@
     @endif
     @if ($content->style == 'style_1')
         <section
-            class="zigzag-wrapper py-70 relative {!! $image_position !!} @if ($content->extra_class) {!! $content->extra_class !!} @endif "
+            class="zigzag-wrapper py-40 xl2:py-70 relative {!! $image_position !!} @if ($content->extra_class) {!! $content->extra_class !!} @endif "
             @if ($content->id) id="{!! $content->id !!}" @endif>
             <div class="container-fluid-lg">
                 <div class="{!! $main_div !!}">
@@ -56,9 +56,9 @@
             </div>
         </section>
     @else
-        <section class="zigzag-wrapper py-70 relative {!! $image_position !!}">
+        <section class="zigzag-wrapper py-40 xl2:py-70 relative {!! $image_position !!}">
             <div class="container-fluid-lg">
-                <div class="{!! $main_div !!}">
+                <div class="@if($content->style == "style_2") items-center @endif {!! $main_div !!}">
                     @if (!empty($content->image))
                         <div class="w-full lg:w-[55%]">
                             <div class="zigzag-img relative pt-[54%] h-full fadeText">

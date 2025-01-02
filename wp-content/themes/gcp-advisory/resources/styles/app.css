@@ -256,6 +256,10 @@
     @apply border-2 border-solid border-green-100 rounded-[150px] w-full h-full left-0 top-0 absolute;
   }
 
+  .btn svg {
+    @apply 1023:w-[40px];
+  }
+
   .line-clamp-two {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -365,6 +369,10 @@
     @apply absolute inset-0 w-full h-full block object-cover;
   }
 
+  br {
+    @apply 767:hidden;
+  }
+
   /* .anim .anim-img {
     opacity: 0;
     transition: clip-path 0.3s ease-out;
@@ -456,6 +464,9 @@
   .header.is-sticky .user-icon svg path {
     @apply fill-green-200;
   }
+  .header .user-icon svg {
+    @apply w-[24px] h-[24px];
+  }
   .header .logo img.sticky {
     @apply hidden;
   }
@@ -530,22 +541,14 @@
 
   @screen 1023 {
     .navbar {
-      @apply bg-white overflow-y-auto overflow-x-hidden h-[calc(100dvh_-_35dvh)] w-full left-0 px-0 pb-50 absolute top-[100%] duration-300 ease-linear delay-150 max-w-none hidden;
-    }
-    /* .navbar {
-      @apply bg-white overflow-y-auto overflow-x-hidden !h-[calc(100%_-_174px)] w-full left-0 px-0 pb-50 fixed !top-[174px] duration-300 ease-linear delay-150 max-w-none hidden z-99;
-    } */
-    /* body.is-sticky .navbar {
-      @apply !h-[calc(100%_-_95px)] !top-[95px]
-    } */
-    .menu-main-menu {
-      @apply bg-white;
+      @apply bg-white overflow-y-auto overflow-x-hidden h-[100dvh] w-full left-0 px-0 absolute top-[100%] duration-300 ease-linear delay-150 max-w-none hidden pb-[200px];
     }
     .is-sticky .navbar {
       @apply h-[calc(100dvh_-_6.5dvh)]
     }
     .navbar.active {
-      @apply block;
+      @apply block bg-white;
+      box-shadow: inset 0px 5px 20px 0px #00000026;
     }
     .navbar .menu-main-menu>ul {
       @apply py-20;
@@ -619,9 +622,6 @@
   .banner-wrapper .cmn-pattern svg {
     @apply w-full h-full;
   }
-  .banner-wrapper.inner-banner .slider-content {
-    @apply 1023:justify-end;
-  }
   
   /* Banner end */
 
@@ -679,7 +679,7 @@ footer .social-icon a,.team-zigzag-wrapper .social-icons a {
   @apply flex flex-col gap-[20px];
 }
 .mobile-footer-menu li {
-  @apply relative;
+  @apply relative 1023:pt-10;
 }
 .mobile-footer-menu .sub-menu {
   @apply hidden;

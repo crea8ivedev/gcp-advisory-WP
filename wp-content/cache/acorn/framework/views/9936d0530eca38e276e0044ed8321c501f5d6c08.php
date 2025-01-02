@@ -1,13 +1,15 @@
 <?php if(isset($content->hide_section) && $content->hide_section == 'no'): ?>
-    <section class="testimonial-slider-wrapper testimonials-wrapper py-55 <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
+    <section class="testimonial-slider-wrapper testimonials-wrapper py-40 xl2:py-55 <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
         <?php if($content->id): ?> id="<?php echo $content->id; ?>" <?php endif; ?>>
-        <?php if(!empty($content->heading)): ?>
-            <div class="title-content text-center fadeText">
-                <div class="title title-capitalize title-green">
-                    <h2><?php echo $content->heading; ?></h2>
-                </div>
-            </div>
-        <?php endif; ?>
+        <div class="container-fluid-lg">
+          <?php if(!empty($content->heading)): ?>
+              <div class="title-content text-center fadeText">
+                  <div class="title title-capitalize title-green">
+                      <h2><?php echo $content->heading; ?></h2>
+                  </div>
+              </div>
+          <?php endif; ?>
+        </div>
 
         <?php if(!empty($content->testimonials)): ?>
             <div class="testimonial-slider fadeText">

@@ -1,6 +1,6 @@
 <?php if(isset($content->hide_section) && $content->hide_section == 'no'): ?>
     <section
-        class="services-grid-wrapper py-55 relative bg-green-200 <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
+        class="services-grid-wrapper py-40 xl2:py-55 relative bg-green-200 <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?>"
         <?php if($content->id): ?> id="<?php echo $content->id; ?>" <?php endif; ?>>
         <div class="container-fluid-lg">
             <div class="title-content text-center fadeText">

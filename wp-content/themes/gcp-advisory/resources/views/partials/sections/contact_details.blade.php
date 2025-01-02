@@ -1,19 +1,19 @@
 @if (isset($content->hide_section) && $content->hide_section == 'no')
     <section
-        class="contact-zigzag py-70 relative image-left @if ($content->extra_class) {!! $content->extra_class !!} @endif"
+        class="contact-zigzag py-40 lg:py-70 relative image-left @if ($content->extra_class) {!! $content->extra_class !!} @endif"
         @if ($content->id) id="{!! $content->id !!}" @endif>
         <div class="container-fluid-lg">
             <div class="flex gap-[40px] xxxl:gap-[55px] 1023:flex-wrap items-center">
                 @if (!empty($content->map))
-                    <div class="w-full lg:w-[55%]">
-                        <div class="zigzag-img relative h-full fadeText rounded-10">
+                    <div class="w-full lg:w-[55%] fadeText">
+                        <div class="zigzag-img relative h-full rounded-10">
                             {!! $content->map !!}
                         </div>
                     </div>
                 @endif
-                <div class="w-full lg:w-[45%]">
+                <div class="w-full lg:w-[45%] fadeText">
                     <div class="zigzag-content">
-                        <div class="title-content fadeText">
+                        <div class="title-content">
                             @if (!empty($content->title))
                                 <div class="title title-capitalize title-green flex items-center gap-[20px]">
                                     <h2>{!! $content->title !!}</h2>

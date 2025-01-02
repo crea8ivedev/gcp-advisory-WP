@@ -4,12 +4,12 @@
         <?php if($content->id): ?> id="<?php echo $content->id; ?>" <?php endif; ?>>
         <div class="container-fluid-lg">
             <?php if(!empty($content->heading)): ?>
-                <div class="title title-white">
+                <div class="title title-white fadeText">
                     <h2><?php echo $content->heading; ?></h2>
                 </div>
             <?php endif; ?>
             <?php if(!empty($content->description)): ?>
-                <div class="content title-white pt-20 lg:max-w-[1400px] mx-auto">
+                <div class="content title-white pt-20 lg:max-w-[1400px] mx-auto fadeText">
                     <?php echo $content->description; ?>
 
                 </div>

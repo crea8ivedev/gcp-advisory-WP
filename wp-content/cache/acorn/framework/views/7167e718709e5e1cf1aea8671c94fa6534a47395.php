@@ -142,7 +142,17 @@
                         'theme_location' => 'primary_navigation',
                         'container' => false,
                         'menu_class' =>
-                            'menu flex 1023:flex-col flex-wrap lg:items-center lg:justify-center items-start my-0 lg:gap-[40px] xxl:gap-[60px]',
+                            'menu hidden lg:flex 1023:flex-col flex-wrap lg:items-center lg:justify-center items-start my-0 lg:gap-[40px] xxl:gap-[60px]',
+                        'echo' => false,
+                    ]); ?>
+
+                <?php endif; ?>
+                <?php if(has_nav_menu('secondary_navigation')): ?>
+                    <?php echo wp_nav_menu([
+                        'theme_location' => 'secondary_navigation',
+                        'container' => false,
+                        'menu_class' =>
+                            'menu 1023:flex hidden 1023:flex-col flex-wrap lg:items-center lg:justify-center items-start my-0 lg:gap-[40px] xxl:gap-[60px]',
                         'echo' => false,
                     ]); ?>
 
@@ -154,7 +164,7 @@
                         <?php if($index !== 1): ?>
                             <!-- Skip the second element -->
                             <a href="<?php echo $primary_button['button']['url']; ?>" target="<?php echo $primary_button['button']['target']; ?>"
-                                class="btn btn-greenborder-100 w-full justify-center"
+                                class="btn btn-greenborder-100 w-full justify-center !capitalize"
                                 aria-label="<?php echo $primary_button['button']['title']; ?>">
                                 <?php echo $primary_button['button']['title']; ?> </a>
                         <?php endif; ?>
@@ -164,59 +174,4 @@
         </div>
     </div>
 </header>
-<!-- <div class="navbar hidden items-center justify-between lg:order-1 order-2 lg:w-full">
-    <div class="logo hidden lg:flex">
-        <a href="<?php echo e(esc_url(home_url())); ?>" aria-label="homepage">
-            <?php if(is_404() || is_page(2)): ?>
-                <?php if(!empty($header_black_logo)): ?>
-                    <img src="<?php echo $header_black_logo['url']; ?>" width="562.72" height="64" class="ozad"
-                        alt="<?php echo $header_black_logo['alt']; ?>">
-                <?php endif; ?>
-            <?php else: ?>
-                <?php if(!empty($header_white_logo)): ?>
-                    <img src="<?php echo $header_white_logo['url']; ?>" width="562.72" height="64" class="l-no lozad"
-                        alt="<?php echo $header_white_logo['alt']; ?>">
-                <?php endif; ?>
-                <?php if(!empty($header_black_logo)): ?>
-                    <img src="<?php echo $header_black_logo['url']; ?>" width="562.72" height="64" class="l-st lozad"
-                        alt="<?php echo $header_black_logo['alt']; ?>">
-                <?php endif; ?>
-            <?php endif; ?>
-        </a>
-    </div>
-    <div id="mobile-menu-main" class="menu-main-menu">
-        <?php if(!empty($primary_buttons)): ?>
-            <ul role="list"
-                class="upper-menu menu hidden lg:flex 1023:flex-col flex-wrap lg:items-center lg:justify-end items-start my-0 lg:gap-[40px] xxl:gap-[60px]">
-                <?php $__currentLoopData = $primary_buttons; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $primary_button): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <li>
-                        <a href="<?php echo $primary_button['button']['url']; ?>" taget="<?php echo $primary_button['button']['target']; ?>"
-                            aria-label="<?php echo $primary_button['button']['title']; ?>"> <?php echo $primary_button['button']['title']; ?> </a>
-                    </li>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-            </ul>
-        <?php endif; ?>
-        <?php if(has_nav_menu('secondary_navigation')): ?>
-            <?php echo wp_nav_menu([
-                'theme_location' => 'secondary_navigation',
-                'container' => false,
-                'menu_class' =>
-                    'menu flex 1023:flex-col flex-wrap lg:items-center lg:justify-center items-start my-0 lg:gap-[40px] xxl:gap-[60px]',
-                'echo' => false,
-            ]); ?>
-
-        <?php endif; ?>
-    </div>
-    <?php if(!empty($primary_buttons)): ?>
-        <div class="btn-custom lg:hidden pt-20 flex flex-col items-center gap-[12px] !px-[24px]">
-            <?php $__currentLoopData = $primary_buttons; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $index => $primary_button): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                <?php if($index !== 1): ?>
-                    <a href="<?php echo $primary_button['button']['url']; ?>" target="<?php echo $primary_button['button']['target']; ?>"
-                        class="btn btn-greenborder-100 w-full justify-center" aria-label="<?php echo $primary_button['button']['title']; ?>">
-                        <?php echo $primary_button['button']['title']; ?> </a>
-                <?php endif; ?>
-            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-        </div>
-    <?php endif; ?>
-</div> -->
 <?php /**PATH E:\xampp8\htdocs\ts\gcp-advisory-WP\wp-content\themes\gcp-advisory\resources\views/sections/header.blade.php ENDPATH**/ ?>

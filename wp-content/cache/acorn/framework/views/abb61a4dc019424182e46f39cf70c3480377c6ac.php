@@ -1,6 +1,6 @@
 <?php if(isset($content->hide_section) && $content->hide_section == 'no'): ?>
   <section
-      class="zigzag-form zigzag-wrapper zigzag-pattern relative py-[72px] text-center <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?> "
+      class="zigzag-form zigzag-wrapper zigzag-pattern relative py-40 xl2:py-70 text-center <?php if($content->extra_class): ?> <?php echo $content->extra_class; ?> <?php endif; ?> "
       <?php if($content->id): ?> id="<?php echo $content->id; ?>" <?php endif; ?>>
       
           <div class="title title-capitalize title-green flex items-center gap-[20px] fadeText justify-center pb-40">

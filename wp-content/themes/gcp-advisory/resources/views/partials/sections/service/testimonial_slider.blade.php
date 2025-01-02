@@ -1,13 +1,15 @@
 @if (isset($content->hide_section) && $content->hide_section == 'no')
-    <section class="testimonial-slider-wrapper testimonials-wrapper py-55 @if ($content->extra_class) {!! $content->extra_class !!} @endif"
+    <section class="testimonial-slider-wrapper testimonials-wrapper py-40 xl2:py-55 @if ($content->extra_class) {!! $content->extra_class !!} @endif"
         @if ($content->id) id="{!! $content->id !!}" @endif>
-        @if (!empty($content->heading))
-            <div class="title-content text-center fadeText">
-                <div class="title title-capitalize title-green">
-                    <h2>{!! $content->heading !!}</h2>
-                </div>
-            </div>
-        @endif
+        <div class="container-fluid-lg">
+          @if (!empty($content->heading))
+              <div class="title-content text-center fadeText">
+                  <div class="title title-capitalize title-green">
+                      <h2>{!! $content->heading !!}</h2>
+                  </div>
+              </div>
+          @endif
+        </div>
 
         @if (!empty($content->testimonials))
             <div class="testimonial-slider fadeText">

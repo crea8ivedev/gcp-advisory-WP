@@ -1,6 +1,6 @@
 @if (isset($content->hide_section) && $content->hide_section == 'no')
     <section
-        class="services-grid-wrapper py-55 relative bg-green-200 @if ($content->extra_class) {!! $content->extra_class !!} @endif"
+        class="services-grid-wrapper py-40 xl2:py-55 relative bg-green-200 @if ($content->extra_class) {!! $content->extra_class !!} @endif"
         @if ($content->id) id="{!! $content->id !!}" @endif>
         <div class="container-fluid-lg">
             <div class="title-content text-center fadeText">
